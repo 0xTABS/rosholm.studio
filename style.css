@@ -93,6 +93,7 @@ h1 {
     font-style: normal;
     font-weight: normal;
     letter-spacing: -0.67px;
+
 }
 
 h2 {
@@ -120,6 +121,7 @@ h3 {
 @media only screen and (min-width: 1000px) {
     h1 {
         font-size: 69px;
+        max-width: 80%;
     }
 
     .h2-big {
@@ -129,6 +131,7 @@ h3 {
     h2 {
         font-size: 39px;
     }
+    
 }
 
 

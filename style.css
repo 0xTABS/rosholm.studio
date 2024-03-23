@@ -166,11 +166,10 @@ h3 {
     border: 1px solid;
 }
 
-
 .btn.inverted:hover {
-    background-color: var(--black);
-    color: var(--white);
-    border: 1px solid;
+    background-color: #FFD449;
+    color: var(--black);
+    border: 1px solid white;
 }
 
 body {

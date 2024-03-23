@@ -33,6 +33,10 @@
     src="https://www.facebook.com/tr?id=385606171035609&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -81,20 +85,46 @@
         <h2>Portefølje</h2>
         <div class="portfolio-container">
             <div class="project">
-                <img src="media/west-cover.webp" alt="#">
+                <div class="swiper-container">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="media/west/1.webp"></div>
+                        <div class="swiper-slide"><img src="media/west/2.webp"></div>
+                        <div class="swiper-slide"><img src="media/west/3.webp"></div>
+                        <div class="swiper-slide"><img src="media/west/4.webp"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
                 <div class="project-info">
                     <h3>West®</h3>
                     <p class="grey">20 sterke leads første uken etter lansering.</p>
                 </div>
             </div>
             <div class="project">
-                <img src="media/west-hover.webp" alt="#">
+                <div class="swiper-container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="media/xstorage/1.webp"></div>
+                            <div class="swiper-slide"><img src="media/xstorage/2.webp"></div>
+                            <div class="swiper-slide"><img src="media/xstorage/3.webp"></div>
+                            <div class="swiper-slide"><img src="media/xstorage/4.webp"></div>
+                            <div class="swiper-slide"><img src="media/xstorage/5.webp"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
                 <div class="project-info">
                     <h3>X-Storage®</h3>
-                    <p class="grey">50+ nye kunder innen de første få månedene.</p>
+                    <p class="grey">Over 50 nye kunder innen få måneder.</p>
                 </div>
             </div>
         </div>
+        
       </section>
       <section class="get border-top">
         <div>
@@ -128,5 +158,19 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+    </script>
 </body>
 </html>

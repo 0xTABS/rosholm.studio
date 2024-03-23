@@ -27,7 +27,8 @@
 
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body,h1,h2,h3,h4,p,ul,ol,li,figure,figcaption,blockquote,dl,dd {
@@ -235,6 +236,7 @@ header {
     position: fixed;
     bottom: 16px;
     right: 16px;
+    top: auto;
     z-index: 20;
 }
 
@@ -242,6 +244,7 @@ header {
     header {
         top: 24px;
         right: 24px;
+        bottom: auto;
     }
 }
 
@@ -354,12 +357,18 @@ main {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 1000px) {
     .portfolio-container {
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: var(--pageMargin);
+    }
+    .portfolio-container-reversed {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
         column-gap: var(--pageMargin);
     }
 }
@@ -368,6 +377,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: var(--pageMargin);
+    max-width: 100%;
+    min-width: 0
+    
 }
 
 .project-info {
@@ -401,3 +413,24 @@ footer {
     font-style: italic;
 }
 
+.swiper-container {
+    width: 100%;
+    background-color: #999999;
+    overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide img {
+
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background-color: var(--white);
+}
+
+.width-80 {
+    width: 80%;
+}

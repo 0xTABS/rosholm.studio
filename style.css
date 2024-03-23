@@ -94,6 +94,7 @@ h1 {
     font-style: normal;
     font-weight: normal;
     letter-spacing: -0.67px;
+    margin-bottom: 60px;
 
 }
 
@@ -261,7 +262,6 @@ main {
 }
 
 .intro-cards {
-    margin-top: 60px;
     display: grid;
 }
 
@@ -307,6 +307,14 @@ main {
     margin-top: 120px;
     padding: var(--pageMargin);
     margin-bottom: 120px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    padding: var(--pageMargin);
+    margin-bottom: 120px;
+    gap: 60px;
 }
 
 .get {

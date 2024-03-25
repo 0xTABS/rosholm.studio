@@ -109,6 +109,7 @@ h2 {
 .h2-big {
     font-size: 31px;
     line-height: 100%;
+    width: 100%;
 }
 
 h3 {
@@ -390,7 +391,13 @@ main {
 }
 
 .project-info {
-    max-width: 75%;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+    .project-info {
+        max-width: 75%;
+    }
 }
 
 
